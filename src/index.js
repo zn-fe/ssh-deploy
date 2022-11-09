@@ -18,7 +18,7 @@ const defaultOptions = {
 };
 
 console.log('[general] GITHUB_WORKSPACE: ', GITHUB_WORKSPACE);
-console.log(defaultOptions)
+console.log(defaultOptions);
 
 const sshDeploy = (() => {
   const rsync = ({ privateKey, port, src, dest, args, exclude }) => {
