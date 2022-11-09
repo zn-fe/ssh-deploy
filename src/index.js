@@ -13,7 +13,7 @@ const {
 
 const defaultOptions = {
   ssh: true,
-  sshCmdArgs: ['-o StrictHostKeyChecking=no'],
+  sshCmdArgs: ['-o StrictHostKeyChecking=no', '-o HostKeyAlgorithms=+ssh-rsa', '-o PubkeyAcceptedKeyTypes=+ssh-rsa'],
   recursive: true
 };
 
